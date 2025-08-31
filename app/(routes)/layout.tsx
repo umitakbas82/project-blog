@@ -1,9 +1,16 @@
 import React from 'react'
 
-const RoutesLayout = () => {
-  return (
-    <div>RoutesLayout</div>
-  )
+interface RoutesLayoutProps {
+    children: React.ReactNode;
+}
+const RoutesLayout = ({ children }: RoutesLayoutProps) => {
+    return (
+        <div>
+            Header
+            {children}
+            Footer
+        </div>
+    )
 }
 
 export default RoutesLayout
