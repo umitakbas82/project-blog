@@ -1,4 +1,6 @@
 
+import { Button } from '@/components/ui/button'
+import { Facebook, Instagram, Linkedin, LinkedinIcon, Twitter } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -12,12 +14,25 @@ const Footer = () => {
                     </Link>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cupiditate.</p>
                 </div>
-<nav className='md:mt-o mt-16 space-x-4'>
+<nav className='md:mt-o mt-8 space-x-4'>
      <Link href="/home" className='text-white font-bold hover:underline'> Home</Link>
                     <Link href="/about" className='text-white font-bold hover:underline'> About</Link>
                     <Link href="/blog" className='text-white font-bold hover:underline'> Blog</Link>
                     <Link href="/contact" className='text-white font-bold hover:underline'> Contact</Link>
 </nav>
+<div className='md:mt-o mt-8 space-x-4'>
+
+    <Button variant="ghost">
+                            <Facebook />
+                        </Button>
+                        <Button variant="ghost">
+                          <Instagram/>
+                        </Button>
+                        <Button variant="ghost" >
+                         <Twitter/>
+                        </Button>
+</div>
+
             </div>
 
 
