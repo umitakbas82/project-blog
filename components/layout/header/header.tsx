@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Menu, Search, User } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
     return (
@@ -25,9 +26,8 @@ const Header = () => {
                         <Button variant="ghost">
                             <User />
                         </Button>
-                        <Button variant="ghost" className='md:hidden'>
-                            <Menu />
-                        </Button>
+                       
+                        <MobileMenu/>
                     </div>
 
                 </div>
